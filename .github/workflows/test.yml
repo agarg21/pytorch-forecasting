@@ -160,7 +160,7 @@ jobs:
 
   pytest:
     name: Run pytest
-    needs: pytest-nosoftdeps
+    needs: code-quality
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
